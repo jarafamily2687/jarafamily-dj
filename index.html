@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JARAFAMILY DJ: DJ, animación, sonido, iluminación y ambientación musical para bodas, quinceaños, cumpleaños y eventos empresariales en Pereira y el Eje Cafetero. Reserva por WhatsApp.">
+  <meta name="theme-color" content="#100d1c">
+  <title>JARAFAMILY DJ | Tu celebración, nuestro ritmo</title>
+  <style>
+    :root{--bg:#100d1c;--panel:#1b1729;--text:#fff;--muted:#c9c4d6;--pink:#ff3f9b;--purple:#8a5cff;--cyan:#45e5e5;--line:rgba(255,255,255,.13)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,13,28,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{font-weight:900;letter-spacing:1px;font-size:1.1rem}.brand span{color:var(--pink)}
+    nav{display:flex;gap:18px;align-items:center;font-size:.92rem;color:var(--muted)}nav a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:999px;font-weight:800;background:linear-gradient(110deg,var(--pink),var(--purple));color:#fff;border:0;box-shadow:0 8px 28px #8a5cff35;transition:transform .2s}
+    .btn:hover{transform:translateY(-2px)}.btn.secondary{background:transparent;border:1px solid var(--line);box-shadow:none}
+    .hero{position:relative;overflow:hidden;min-height:600px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(16,13,28,.97) 0%,rgba(16,13,28,.82) 48%,rgba(16,13,28,.25) 100%),url('https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:130px;background:linear-gradient(transparent,var(--bg));pointer-events:none}.hero-content{position:relative;z-index:1;max-width:690px;padding:85px 0 105px}
+    .eyebrow{color:var(--cyan);font-size:.78rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:800}
+    h1{font-size:clamp(2.7rem,7vw,5.5rem);line-height:.98;letter-spacing:-2px;margin:16px 0 22px}h1 span{background:linear-gradient(100deg,var(--pink),#b28cff,var(--cyan));background-clip:text;color:transparent}
+    .lead{font-size:1.15rem;color:#e3deed;max-width:570px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .trust{display:flex;flex-wrap:wrap;gap:18px;margin-top:30px;color:var(--muted);font-size:.9rem}.trust span:before{content:"✦";color:var(--cyan);margin-right:8px}
+    section{padding:78px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0}.section-head p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px}.card h3{margin:8px 0}.card p{color:var(--muted);margin-bottom:0}.symbol{font-size:1.8rem}
+    .services .card{min-height:190px}.prices{grid-template-columns:repeat(4,1fr);align-items:stretch}.price-card{position:relative;display:flex;flex-direction:column}.price-card.featured{border-color:var(--pink);box-shadow:0 0 35px #ff3f9b16}.tag{font-size:.72rem;color:var(--cyan);font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.price{font-size:2rem;font-weight:900;letter-spacing:-1px;margin:12px 0 2px}.price small{font-size:.8rem;color:var(--muted);font-weight:500;letter-spacing:0}.price-card ul{padding-left:18px;color:var(--muted);flex:1}.price-card li{margin:8px 0}.price-card .btn{margin-top:12px;width:100%;font-size:.9rem;padding:11px}
+    .addons{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}.addons .card{padding:24px}.addons ul{color:var(--muted);padding-left:20px}
+    .about{background:linear-gradient(120deg,#21142e,#151126);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1}.about p{color:var(--muted)}.values{display:grid;grid-template-columns:1fr 1fr;gap:12px}.value{padding:18px;border-radius:14px;background:#ffffff08;border:1px solid var(--line)}.value strong{display:block;color:var(--cyan);margin-bottom:4px}
+    .contact-box{border:1px solid var(--line);border-radius:26px;padding:clamp(25px,5vw,55px);text-align:center;background:radial-gradient(ellipse at top right,#8a5cff2a,transparent 50%),var(--panel)}.contact-box h2{font-size:clamp(2rem,5vw,3.3rem);line-height:1.1;margin:12px 0}.contact-box p{color:var(--muted);max-width:650px;margin:0 auto 25px}
+    footer{padding:28px 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .wa-float{position:fixed;right:18px;bottom:18px;z-index:20;background:#25d366;color:#082b15;font-weight:900;padding:13px 17px;border-radius:999px;box-shadow:0 8px 30px #0007}
+    .note{font-size:.82rem;color:var(--muted);margin-top:20px}
+    @media(max-width:900px){.prices{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}nav{gap:10px}.about-grid{gap:25px}}
+    @media(max-width:640px){.nav{flex-wrap:wrap}.nav .btn{padding:10px 13px;font-size:.85rem}nav{order:3;width:100%;overflow-x:auto;padding-bottom:3px;white-space:nowrap}.hero{min-height:570px;background-position:60% center}.hero-content{padding:70px 0 90px}h1{letter-spacing:-1px}.grid,.prices,.addons,.about-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr 1fr}section{padding:60px 0}.card{padding:22px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio">JARA<span>FAMILY</span> DJ</a>
+    <nav aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a><a href="#paquetes">Paquetes</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn" href="https://wa.me/573114334531?text=Hola%20JARAFAMILY%20DJ%2C%20quiero%20cotizar%20un%20evento." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap"><div class="hero-content">
+      <div class="eyebrow">Pereira · Eje Cafetero</div>
+      <h1>TU CELEBRACIÓN,<br><span>NUESTRO RITMO.</span></h1>
+      <p class="lead">Creamos experiencias musicales memorables con DJ, animación, sonido e iluminación para que cada celebración tenga su propia energía.</p>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/573114334531?text=Hola%20JARAFAMILY%20DJ%2C%20quiero%20reservar%20una%20fecha." target="_blank" rel="noopener">♫ Reserva tu fecha</a>
+        <a class="btn secondary" href="#paquetes">Ver paquetes y precios</a>
+      </div>
+      <div class="trust"><span>Eventos sociales y empresariales</span><span>Atención personalizada</span><span>Ambiente a tu medida</span></div>
+    </div></div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Lo hacemos sonar</div><h2>Un evento, mil emociones</h2><p>Nos adaptamos a tu celebración, a tus invitados y al ambiente que quieres crear.</p></div>
+      <div class="grid">
+        <article class="card"><div class="symbol">🎧</div><h3>DJ y mezclas en vivo</h3><p>Música seleccionada para acompañar cada momento y mantener la energía de la fiesta.</p></article>
+        <article class="card"><div class="symbol">🎤</div><h3>Animación de eventos</h3><p>Presentación y acompañamiento para que tus invitados se conecten con la celebración.</p></article>
+        <article class="card"><div class="symbol">🔊</div><h3>Sonido profesional</h3><p>Soluciones de sonido adaptadas al espacio, al aforo y a las necesidades de tu evento.</p></article>
+        <article class="card"><div class="symbol">💡</div><h3>Iluminación y efectos</h3><p>Luces y efectos especiales para darle personalidad a la pista y al escenario.</p></article>
+        <article class="card"><div class="symbol">🎬</div><h3>Producción audiovisual</h3><p>Grabación, edición y transmisión en vivo para compartir momentos especiales.</p></article>
+        <article class="card"><div class="symbol">🎶</div><h3>Fiestas temáticas</h3><p>Ambientes retro, urbanos, electrónicos, latinos y familiares, según tus gustos.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="paquetes">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Elige tu experiencia</div><h2>Paquetes para cada celebración</h2><p>Tarifas de referencia en pesos colombianos. Cuéntanos los detalles para confirmar disponibilidad y cotización final.</p></div>
+      <div class="grid prices">
+        <article class="card price-card"><div class="tag">Ideal para reuniones</div><h3>Paquete Básico</h3><div class="price">$450.000 <small>COP</small></div><p>Una experiencia cercana para eventos pequeños.</p><ul><li>DJ profesional</li><li>Sonido para espacios de hasta 80 personas</li><li>3 horas de servicio</li></ul><a class="btn" href="https://wa.me/573114334531?text=Hola%2C%20quiero%20cotizar%20el%20Paquete%20B%C3%A1sico%20de%20JARAFAMILY%20DJ." target="_blank" rel="noopener">Cotizar Básico</a></article>
+        <article class="card price-card"><div class="tag">Para celebrar en grande</div><h3>Paquete Estándar</h3><div class="price">$750.000 <small>COP</small></div><p>Un ambiente completo para tus invitados.</p><ul><li>Sonido profesional y DJ</li><li>Iluminación LED básica</li><li>4 horas de servicio</li></ul><a class="btn" href="https://wa.me/573114334531?text=Hola%2C%20quiero%20cotizar%20el%20Paquete%20Est%C3%A1ndar%20de%20JARAFAMILY%20DJ." target="_blank" rel="noopener">Cotizar Estándar</a></article>
+        <article class="card price-card featured"><div class="tag">Experiencia destacada</div><h3>Paquete Premium</h3><div class="price">$1.200.000 <small>COP</small></div><p>Más energía, animación y efectos.</p><ul><li>DJ y sonido de alta potencia</li><li>Iluminación inteligente</li><li>Animación y efectos básicos</li><li>5 horas de servicio</li><li>Reunión técnica y visita incluidas</li></ul><a class="btn" href="https://wa.me/573114334531?text=Hola%2C%20quiero%20cotizar%20el%20Paquete%20Premium%20de%20JARAFAMILY%20DJ." target="_blank" rel="noopener">Cotizar Premium</a></article>
+        <article class="card price-card"><div class="tag">Máximo impacto</div><h3>Paquete Ultra</h3><div class="price">$1.600.000 <small>COP</small></div><p>Una producción para eventos de alto impacto.</p><ul><li>DJ y sonido profesional</li><li>Iluminación inteligente y animación</li><li>Efectos especiales según cotización</li><li>6 horas de servicio</li><li>Reunión técnica y visita incluidas</li></ul><a class="btn" href="https://wa.me/573114334531?text=Hola%2C%20quiero%20cotizar%20el%20Paquete%20Ultra%20de%20JARAFAMILY%20DJ." target="_blank" rel="noopener">Cotizar Ultra</a></article>
+      </div>
+      <div class="addons">
+        <div class="card"><h3>Servicios adicionales</h3><ul><li>Hora adicional: <strong>$120.000 COP</strong></li><li>Pantalla LED 2 × 3 m: <strong>$250.000 COP</strong></li><li>Máquina de humo pesado: <strong>$180.000 COP</strong></li><li>Burbujas profesionales: <strong>$80.000 COP</strong></li><li>Transporte fuera de Pereira: <strong>$40.000–$120.000 COP</strong>, según distancia</li></ul></div>
+        <div class="card"><h3>Condiciones para reservar</h3><ul><li>Anticipo de reserva: 30–50%, según acuerdo.</li><li>Solicitudes de cancelación: mínimo 72 horas antes del evento.</li><li>Montaje previsto: 1–2 horas antes del inicio.</li><li>Precios sujetos a disponibilidad, aforo, distancia y requerimientos.</li><li>Visita técnica: incluida en Premium y Ultra; $50.000 COP en Básico y Estándar.</li></ul></div>
+      </div>
+      <p class="note">Los precios y condiciones publicados corresponden a la propuesta empresarial suministrada y deben confirmarse con JARAFAMILY DJ antes de contratar.</p>
+    </div>
+  </section>
+
+  <section class="about" id="nosotros">
+    <div class="wrap about-grid">
+      <div><div class="eyebrow">Nuestra esencia</div><h2>La música conecta. Nosotros creamos el ambiente.</h2><p>JARAFAMILY DJ nace para combinar tecnología, cercanía familiar y experiencia musical en celebraciones sociales, empresariales y culturales en Pereira y el Eje Cafetero.</p><p>Diseñamos la ambientación de acuerdo con el tipo de evento, los gustos del cliente y la energía que quiere compartir con sus invitados.</p><a class="btn" href="https://wa.me/573114334531?text=Hola%20JARAFAMILY%20DJ%2C%20cu%C3%A9ntenme%20c%C3%B3mo%20podemos%20organizar%20mi%20evento." target="_blank" rel="noopener">Hablemos de tu evento</a></div>
+      <div class="values">
+        <div class="value"><strong>Misión</strong>Crear experiencias musicales memorables que conecten a la audiencia con ritmos urbanos, electrónicos y latinos.</div>
+        <div class="value"><strong>Visión</strong>Ser un referente regional en entretenimiento musical por nuestro estilo, cercanía y profesionalismo.</div>
+        <div class="value"><strong>Valores</strong>Energía, comunidad, creatividad y autenticidad.</div>
+        <div class="value"><strong>Cobertura</strong>Pereira, Dosquebradas, Santa Rosa y municipios cercanos.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap"><div class="contact-box">
+      <div class="eyebrow">Tu próxima celebración empieza aquí</div>
+      <h2>¿Listo para ponerle ritmo a tu evento?</h2>
+      <p>Escríbenos por WhatsApp con la fecha, el lugar, el tipo de celebración y la cantidad aproximada de invitados. Te ayudaremos a elegir la opción adecuada.</p>
+      <a class="btn" href="https://wa.me/573114334531?text=Hola%20JARAFAMILY%20DJ.%20Quiero%20cotizar%20un%20evento.%0AFecha%3A%20%0ALugar%3A%20%0ATipo%20de%20evento%3A%20%0AN%C3%BAmero%20de%20invitados%3A" target="_blank" rel="noopener">📲 Reservar por WhatsApp</a>
+      <p class="note">WhatsApp: 311 433 4531 · Pereira, Risaralda, Colombia</p>
+    </div></div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><div><strong>JARAFAMILY DJ</strong> — Tu celebración, nuestro ritmo.</div><div>Servicios musicales y producción de eventos · Pereira y Eje Cafetero</div><div>© <span id="year">2026</span> JARAFAMILY DJ</div></div></footer>
+<a class="wa-float" href="https://wa.me/573114334531?text=Hola%20JARAFAMILY%20DJ%2C%20quiero%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WhatsApp ↗</a>
+</body>
+</html>
