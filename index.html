@@ -1,189 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- TÍTULO OPTIMIZADO PARA GOOGLE (Máximo 60 caracteres) -->
-    <title>Jarafamily DJ | Eventos, Sonido e Iluminación en Pereira</title>
-    
-    <!-- META DESCRIPCIÓN PARA SEO (El resumen que sale en los resultados de búsqueda) -->
-    <meta name="description" content="Jarafamily DJ en Pereira y el Eje Cafetero. Servicios profesionales de sonido, iluminación y animación para bodas, fiestas retro y eventos sociales.">
-    
-    <!-- PALABRAS CLAVE PARA TU NEGOCIO -->
-    <meta name="keywords" content="dj en pereira, sonido para eventos pereira, minitecas eje cafetero, jarafamily dj, fiestas retro pereira, iluminacion eventos">
-    
-    <!-- ENLACE CANONICAL (Evita que Google piense que hay contenido duplicado) -->
-    <link rel="canonical" href="https://github.io">
-    
-    <!-- Enlace a tus estilos CSS (Asegúrate de que este nombre coincida con tu archivo de diseño) -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JarafamilyDJ ofrece DJ, sonido, iluminación, animación y producción de eventos en Pereira y el Eje Cafetero. Solicita tu cotización por WhatsApp.">
+  <meta name="theme-color" content="#07111f">
+  <title>JarafamilyDJ | Música que une generaciones</title>
+  <style>
+    :root{--bg:#07111f;--panel:#101e31;--gold:#ffb400;--pink:#ff1686;--cyan:#00d2e8;--white:#fff;--muted:#d4deeb;--green:#16b957}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--white);line-height:1.6}
+    a{color:inherit}.wrap{width:min(1160px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(4,11,21,.96);border-bottom:1px solid #24344a;backdrop-filter:blur(12px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}.brand{font-size:1.35rem;font-weight:900;line-height:1.1;text-decoration:none;white-space:nowrap}.brand span{color:var(--gold)}.brand small{display:block;font-size:.62rem;letter-spacing:1.4px;color:#e6edf5}
+    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.92rem;color:#eef3fa}nav a:hover{color:var(--gold)}
+    .hero{min-height:570px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,10,19,.95),rgba(3,10,19,.75) 48%,rgba(3,10,19,.25)),url('https://images.unsplash.com/photo-1571266028243-d220c9c3b7c5?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero-content{max-width:700px;padding:78px 0}.eyebrow{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.85rem}.hero h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.02;margin:12px 0}.hero h1 span{color:var(--gold)}.slogan{font-size:clamp(1.3rem,3vw,2rem);font-style:italic;color:#fff;margin:12px 0}.hero p{font-size:1.08rem;max-width:610px;color:#e3eaf4}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:999px;padding:13px 21px;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn-gold{background:var(--gold);color:#121212}.btn-wa{background:var(--green);color:white}.btn-outline{border:1px solid #b8c7d8;color:white;background:transparent}
+    section{padding:70px 0}.section-title{text-align:center;font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:0 0 12px}.section-title span{color:var(--gold)}.section-intro{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 34px}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.feature,.service,.package,.value{background:var(--panel);border:1px solid #24364c;border-radius:18px;padding:22px}.feature .emoji{font-size:2rem}.feature h3,.service h3{margin:8px 0}.feature p,.service p,.value p{color:var(--muted);margin:0}
+    .services{background:#0b1728}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:linear-gradient(150deg,#14243a,#0c1727)}.service .emoji{font-size:2rem}
+    .packages{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:stretch}.package{padding:0;overflow:hidden;background:#f7f9fc;color:#142033;border:0;display:flex;flex-direction:column}.package-head{padding:20px;color:#fff;background:linear-gradient(120deg,#00a8c7,#00d2e8)}.package:nth-child(2) .package-head{background:linear-gradient(120deg,#6422d9,#a34cff)}.package:nth-child(3) .package-head{background:linear-gradient(120deg,#ed6500,#ffb000)}.package:nth-child(4) .package-head{background:linear-gradient(120deg,#e80071,#ff399b)}.package h3{margin:0;font-size:1.35rem}.price{font-size:1.45rem;font-weight:900;margin-top:4px}.package ul{padding:0 24px 0 40px;flex:1}.package li{margin:7px 0}.package .package-bottom{padding:0 20px 22px}.package .btn{width:100%;font-size:.9rem;padding:11px}
+    .extras{margin-top:22px;border:1px solid #a87800;border-radius:16px;padding:20px;background:#0c1727}.extras h3{margin:0 0 12px;color:var(--gold)}.extras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.extra{border-left:2px solid var(--gold);padding-left:12px;color:var(--muted)}.extra strong{color:#fff;display:block}
+    .terms{background:#f6f8fb;color:#172438}.terms .section-title{color:#142033}.terms-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.term{padding:16px;border-radius:12px;background:white;border:1px solid #e1e7ef}.term strong{display:block;color:#142033}.term p{margin:6px 0 0;color:#526174;font-size:.92rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.about-photo{width:100%;min-height:360px;object-fit:cover;border-radius:22px;border:1px solid #31455e}.values{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.value{padding:18px}.value h3{margin:0 0 6px;color:var(--gold)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery img{width:100%;height:220px;object-fit:cover;border-radius:14px;border:1px solid #31445b}
+    .cta{background:linear-gradient(100deg,#261044,#081c32 55%,#2a0a29);text-align:center}.cta h2{font-size:clamp(2rem,4vw,3.2rem);margin:0 0 10px}.cta p{color:var(--muted);margin:0 auto 24px;max-width:650px}.contact-line{font-size:1.1rem;font-weight:800;margin-top:14px}
+    footer{padding:30px 0;background:#030912;border-top:1px solid #23334a}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-row p{margin:4px 0;color:var(--muted);font-size:.9rem}.floating-wa{position:fixed;right:20px;bottom:20px;z-index:30;background:var(--green);color:white;border-radius:999px;padding:14px 18px;font-weight:900;text-decoration:none;box-shadow:0 8px 28px #0008;display:flex;align-items:center;gap:9px}.floating-wa .wa-icon{font-size:1.3rem}
+    @media(max-width:900px){.features,.service-grid,.packages{grid-template-columns:repeat(2,1fr)}.terms-grid{grid-template-columns:repeat(2,1fr)}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}nav{gap:12px}.about-grid{grid-template-columns:1fr}.hero{min-height:520px}.extras-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){section{padding:50px 0}.features,.service-grid,.packages,.values,.gallery,.terms-grid,.extras-grid{grid-template-columns:1fr}.gallery img{height:210px}.hero-content{padding:55px 0}.hero{background-position:60% center}.brand{font-size:1.2rem}nav a{font-size:.85rem}.floating-wa{right:12px;bottom:12px;padding:12px 15px}.price{font-size:1.35rem}}
+  </style>
 </head>
 <body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="JarafamilyDJ, inicio">🎧 Jarafamily<span>DJ</span><small>MÚSICA QUE UNE GENERACIONES</small></a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#paquetes">Paquetes</a><a href="#galeria">Galería</a><a href="#nosotros">Nuestra esencia</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- ENCABEZADO Y NAVEGACIÓN -->
-    <header>
-        <div class="nav-container">
-            <span class="logo">🎧 Jarafamily DJ</span>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#paquetes">Paquetes</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#esencia">Nuestra Esencia</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap"><div class="hero-content">
+      <div class="eyebrow">DJ · Sonido · Iluminación · Animación</div>
+      <h1>Jarafamily<span>DJ</span></h1>
+      <div class="slogan">Música que une generaciones.</div>
+      <p>Convertimos tus celebraciones en experiencias inolvidables con música, energía y atención cercana. Creamos el ambiente ideal para eventos sociales, empresariales y culturales en Pereira y el Eje Cafetero.</p>
+      <div class="actions"><a class="btn btn-wa" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20cotizar%20sus%20servicios%20para%20un%20evento." target="_blank" rel="noopener">☏ Cotizar por WhatsApp</a><a class="btn btn-outline" href="#paquetes">Ver paquetes y precios</a></div>
+    </div></div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">¿Por qué elegir <span>JarafamilyDJ?</span></h2>
+      <p class="section-intro">Un servicio pensado para que disfrutes tu celebración con tranquilidad, buena música y una producción adaptada a tus necesidades.</p>
+      <div class="features">
+        <article class="feature"><div class="emoji">👨‍👩‍👧‍👦</div><h3>Enfoque familiar</h3><p>Cercanía, confianza y acompañamiento durante la organización de tu evento.</p></article>
+        <article class="feature"><div class="emoji">🎛️</div><h3>Profesionalismo técnico</h3><p>Sonido, mezclas en vivo y soluciones de iluminación según el evento.</p></article>
+        <article class="feature"><div class="emoji">🎶</div><h3>Personalización total</h3><p>Selección musical según tus gustos, invitados y tipo de celebración.</p></article>
+        <article class="feature"><div class="emoji">📍</div><h3>Cobertura regional</h3><p>Pereira, Dosquebradas, Santa Rosa de Cabal y municipios cercanos.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <h2 class="section-title">Nuestros <span>servicios</span></h2>
+      <p class="section-intro">Cuéntanos qué estás celebrando y te ayudaremos a elegir la opción ideal.</p>
+      <div class="service-grid">
+        <article class="service"><div class="emoji">🎧</div><h3>DJ para eventos sociales</h3><p>Bodas, quinceañeras, cumpleaños, aniversarios, grados y reuniones familiares.</p></article>
+        <article class="service"><div class="emoji">📹</div><h3>Transmisión en vivo</h3><p>Apoyo para compartir tu evento en línea, sujeto a las condiciones técnicas del lugar.</p></article>
+        <article class="service"><div class="emoji">✨</div><h3>Paquetes temáticos</h3><p>Fiestas retro, urbanas, electrónicas y familiares, con música para cada ambiente.</p></article>
+        <article class="service"><div class="emoji">🎼</div><h3>Asesoría musical personalizada</h3><p>Selección de repertorio y ambientación de acuerdo con tu estilo y el tipo de evento.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="paquetes">
+    <div class="wrap">
+      <h2 class="section-title">Paquetes y <span>precios</span></h2>
+      <p class="section-intro">Precios de referencia para Pereira y el Eje Cafetero. La cotización final depende de la fecha, el lugar, el aforo y los requerimientos técnicos.</p>
+      <div class="packages">
+        <article class="package"><div class="package-head"><h3>Básico</h3><div class="price">$450.000 COP</div></div><ul><li>DJ profesional.</li><li>Sonido para espacios pequeños, hasta 80 personas.</li><li>3 horas de servicio.</li><li>Ideal para cumpleaños y reuniones familiares.</li></ul><div class="package-bottom"><a class="btn btn-gold" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20cotizar%20el%20paquete%20B%C3%A1sico." target="_blank" rel="noopener">Cotizar Básico</a></div></article>
+        <article class="package"><div class="package-head"><h3>Estándar</h3><div class="price">$750.000 COP</div></div><ul><li>Sonido profesional y DJ.</li><li>Iluminación LED básica.</li><li>4 horas de servicio.</li><li>Recomendado para quinceañeras, grados y eventos empresariales medianos.</li></ul><div class="package-bottom"><a class="btn btn-gold" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20cotizar%20el%20paquete%20Est%C3%A1ndar." target="_blank" rel="noopener">Cotizar Estándar</a></div></article>
+        <article class="package"><div class="package-head"><h3>Premium</h3><div class="price">$1.200.000 COP</div></div><ul><li>DJ y sonido de alta potencia.</li><li>Iluminación inteligente con cabezas móviles.</li><li>Animación y efectos básicos, como humo o burbujas.</li><li>5 horas de servicio.</li></ul><div class="package-bottom"><a class="btn btn-gold" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20cotizar%20el%20paquete%20Premium." target="_blank" rel="noopener">Cotizar Premium</a></div></article>
+        <article class="package"><div class="package-head"><h3>Ultra</h3><div class="price">$1.600.000 COP</div></div><ul><li>DJ y sonido profesional.</li><li>Iluminación inteligente y animación.</li><li>Efectos especiales sujetos a disponibilidad: láser, humo pesado o pantalla LED.</li><li>6 horas de servicio.</li></ul><div class="package-bottom"><a class="btn btn-gold" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20cotizar%20el%20paquete%20Ultra." target="_blank" rel="noopener">Cotizar Ultra</a></div></article>
+      </div>
+      <div class="extras"><h3>Extras y servicios adicionales</h3><div class="extras-grid">
+        <div class="extra"><strong>Hora adicional</strong>$120.000 COP</div>
+        <div class="extra"><strong>Pantalla LED de 2 × 3 m</strong>$250.000 COP</div>
+        <div class="extra"><strong>Máquina de humo pesado</strong>$180.000 COP</div>
+        <div class="extra"><strong>Burbujas profesionales</strong>$80.000 COP</div>
+        <div class="extra"><strong>Transporte fuera de Pereira</strong>$40.000–$120.000 COP, según la distancia.</div>
+        <div class="extra"><strong>Reunión técnica y visita al lugar</strong>Incluidas en Premium y Ultra. En Básico y Estándar: $50.000 COP.</div>
+      </div></div>
+      <div class="actions" style="justify-content:center"><a class="btn btn-wa" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20una%20cotizaci%C3%B3n%20personalizada." target="_blank" rel="noopener">Solicitar cotización personalizada</a></div>
+    </div>
+  </section>
+
+  <section class="terms">
+    <div class="wrap">
+      <h2 class="section-title">Condiciones <span>comerciales</span></h2>
+      <div class="terms-grid">
+        <div class="term"><strong>Reserva</strong><p>Anticipo del 30 % al 50 %, según lo acordado en la cotización.</p></div>
+        <div class="term"><strong>Cancelación</strong><p>Solicitar la cancelación con al menos 72 horas de anticipación.</p></div>
+        <div class="term"><strong>Montaje</strong><p>Entre 1 y 2 horas antes del inicio del evento.</p></div>
+        <div class="term"><strong>Garantía técnica</strong><p>Disponibilidad de equipo de respaldo, según las condiciones del servicio contratado.</p></div>
+        <div class="term"><strong>Precios</strong><p>Sujetos a disponibilidad, aforo, ubicación y necesidades del evento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="wrap about-grid">
+      <div>
+        <h2 class="section-title" style="text-align:left">Nuestra <span>esencia</span></h2>
+        <p class="section-intro" style="text-align:left;margin:0">Nuestra misión es crear experiencias musicales memorables que conecten a las personas a través de ritmos urbanos, electrónicos y latinos.</p>
+        <div class="values">
+          <article class="value"><h3>Visión</h3><p>Ser un referente regional en entretenimiento musical por nuestro estilo, cercanía y profesionalismo.</p></article>
+          <article class="value"><h3>Valores</h3><p>Energía, comunidad, creatividad y autenticidad.</p></article>
+          <article class="value"><h3>Personalidad</h3><p>Dinámica, moderna, cercana y festiva.</p></article>
+          <article class="value"><h3>Compromiso</h3><p>Escuchar tus ideas y preparar una propuesta acorde con tu celebración.</p></article>
         </div>
-    </header>
+      </div>
+      <img class="about-photo" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1000&q=85" alt="Público disfrutando de un evento musical con luces de escenario" loading="lazy">
+    </div>
+  </section>
 
-    <main>
-        <!-- SECCIÓN DE BIENVENIDA (HERO) -->
-        <section id="inicio" class="hero-section">
-            <p class="tagline">DJ · Sonido · Iluminación · Animación</p>
-            <!-- El H1 debe ser único y con la palabra clave principal -->
-            <h1>Jarafamily DJ: Música que une generaciones</h1>
-            <p class="intro-text">Convertimos tus celebraciones en experiencias inolvidables con música, energía y atención cercana. Creamos el ambiente ideal para eventos sociales, empresariales y culturales en Pereira y el Eje Cafetero.</p>
-            <div class="cta-buttons">
-                <a href="https://wa.me" target="_blank" class="btn-primary">☏ Cotizar por WhatsApp</a>
-                <a href="#paquetes" class="btn-secondary">Ver paquetes y precios</a>
-            </div>
-        </section>
+  <section id="galeria" style="background:#0b1728">
+    <div class="wrap">
+      <h2 class="section-title">Galería de <span>eventos</span></h2>
+      <p class="section-intro">Imágenes ilustrativas de ambientes musicales. Próximamente podrás reemplazarlas por fotografías de tus propios eventos.</p>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Celebración de boda" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Concierto con público y luces" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80" alt="Público en un evento musical" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1571266028243-d220c9c3b7c5?auto=format&fit=crop&w=800&q=80" alt="DJ trabajando en su consola" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80" alt="Escenario con iluminación de colores" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="Fiesta con luces y asistentes" loading="lazy">
+      </div>
+    </div>
+  </section>
 
-        <!-- ¿POR QUÉ ELEGIRNOS? -->
-        <section class="features-section">
-            <h2>¿Por qué elegir JarafamilyDJ?</h2>
-            <p class="section-subtitle">Un servicio pensado para que disfrutes tu celebración con tranquilidad, buena música y una producción adaptada a tus necesidades.</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <span class="icon">👨‍👩‍👧‍👦</span>
-                    <h3>Enfoque familiar</h3>
-                    <p>Cercanía, confianza y acompañamiento durante la organización de tu evento.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="icon">🎛️</span>
-                    <h3>Profesionalismo técnico</h3>
-                    <p>Sonido, mezclas en vivo y soluciones de iluminación según el evento.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="icon">🎶</span>
-                    <h3>Personalización total</h3>
-                    <p>Selección musical según tus gustos, invitados y tipo de celebración.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="icon">📍</span>
-                    <h3>Cobertura regional</h3>
-                    <p>Pereira, Dosquebradas, Santa Rosa de Cabal y municipios cercanos.</p>
-                </div>
-            </div>
-        </section>
+  <section class="cta" id="contacto">
+    <div class="wrap">
+      <h2>Tu celebración, <span style="color:var(--gold)">nuestro ritmo.</span></h2>
+      <p>Cuéntanos la fecha, el lugar y el tipo de evento. Te responderemos por WhatsApp para ayudarte a elegir el servicio ideal.</p>
+      <a class="btn btn-wa" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20cotizar%20sus%20servicios.%20Tipo%20de%20evento%3A%20____.%20Fecha%3A%20____.%20Lugar%3A%20____." target="_blank" rel="noopener">☏ Cotizar ahora por WhatsApp</a>
+      <div class="contact-line">WhatsApp: 311 433 4531</div>
+      <p>Pereira, Dosquebradas, Santa Rosa de Cabal y el Eje Cafetero.</p>
+    </div>
+  </section>
+</main>
 
-        <!-- SERVICIOS -->
-        <section id="servicios" class="services-section">
-            <h2>Nuestros servicios</h2>
-            <p class="section-subtitle">Cuéntanos qué estás celebrando y te ayudaremos a elegir la opción ideal.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <span class="mini-icon">🎧</span>
-                    <h3>DJ para eventos sociales</h3>
-                    <p>Bodas, quinceañeras, cumpleaños, aniversarios, grados y reuniones familiares.</p>
-                </div>
-                <div class="service-card">
-                    <span class="mini-icon">📹</span>
-                    <h3>Transmisión en vivo</h3>
-                    <p>Apoyo para compartir tu evento en línea, sujeto a las condiciones técnicas del lugar.</p>
-                </div>
-                <div class="service-card">
-                    <span class="mini-icon">✨</span>
-                    <h3>Paquetes temáticos</h3>
-                    <p>Fiestas retro, urbanas, electrónicas y familiares, con música para cada ambiente.</p>
-                </div>
-                <div class="service-card">
-                    <span class="mini-icon">🎼</span>
-                    <h3>Asesoría musical personalizada</h3>
-                    <p>Selección de repertorio y ambientación de acuerdo con tu estilo y el tipo de evento.</p>
-                </div>
-            </div>
-        </section>
+<footer><div class="wrap footer-row">
+  <div><a class="brand" href="#inicio">🎧 Jarafamily<span>DJ</span><small>MÚSICA QUE UNE GENERACIONES</small></a></div>
+  <div><p><strong>Tu evento, en las mejores manos.</strong></p><p>Servicio de DJ, sonido, iluminación y animación.</p></div>
+  <div><p>© <span id="year">2026</span> JarafamilyDJ. Todos los derechos reservados.</p><p>Pereira, Risaralda, Colombia.</p></div>
+</div></footer>
 
-        <!-- PAQUETES Y PRECIOS -->
-        <section id="paquetes" class="pricing-section">
-            <h2>Paquetes y precios</h2>
-            <p class="section-subtitle">Precios de referencia para Pereira y el Eje Cafetero. La cotización final depende de la fecha, el lugar, el aforo y los requerimientos técnicos.</p>
-            
-            <div class="pricing-grid">
-                <!-- Básico -->
-                <div class="price-card">
-                    <h3>Básico</h3>
-                    <p class="price">$450.000 COP</p>
-                    <ul>
-                        <li>DJ profesional.</li>
-                        <li>Sonido para espacios pequeños, hasta 80 personas.</li>
-                        <li>3 horas de servicio.</li>
-                        <li>Ideal para cumpleaños y reuniones familiares.</li>
-                    </ul>
-                    <a href="https://wa.me" target="_blank" class="btn-price">Cotizar Básico</a>
-                </div>
-                
-                <!-- Estándar -->
-                <div class="price-card">
-                    <h3>Estándar</h3>
-                    <p class="price">$750.000 COP</p>
-                    <ul>
-                        <li>Sonido profesional y DJ.</li>
-                        <li>Iluminación LED básica.</li>
-                        <li>4 horas de servicio.</li>
-                        <li>Recomendado para quinceañeras, grados y eventos empresariales medianos.</li>
-                    </ul>
-                    <a href="https://wa.me" target="_blank" class="btn-price">Cotizar Estándar</a>
-                </div>
-
-                <!-- Premium -->
-                <div class="price-card highlight">
-                    <h3>Premium</h3>
-                    <p class="price">$1.200.000 COP</p>
-                    <ul>
-                        <li>DJ y sonido de alta potencia.</li>
-                        <li>Iluminación inteligente con cabezas móviles.</li>
-                        <li>Animación y efectos básicos, como humo o burbujas.</li>
-                        <li>5 horas de servicio.</li>
-                    </ul>
-                    <a href="https://wa.me" target="_blank" class="btn-price">Cotizar Premium</a>
-                </div>
-
-                <!-- Ultra -->
-                <div class="price-card">
-                    <h3>Ultra</h3>
-                    <p class="price">$1.600.000 COP</p>
-                    <ul>
-                        <li>DJ y sonido profesional.</li>
-                        <li>Iluminación inteligente y animación.</li>
-                        <li>Efectos especiales sujetos a disponibilidad: láser, humo pesado o pantalla LED.</li>
-                        <li>6 horas de servicio.</li>
-                    </ul>
-                    <a href="https://wa.me" target="_blank" class="btn-price">Cotizar Ultra</a>
-                </div>
-            </div>
-
-            <!-- Adicionales -->
-            <div class="extras-container">
-                <h3>Extras y servicios adicionales</h3>
-                <ul class="extras-list">
-                    <li><strong>Hora adicional:</strong> $120.000 COP</li>
-                    <li><strong>Pantalla LED de 2 × 3 m:</strong> $250.000 COP</li>
-                    <li><strong>Máquina de humo pesado:</strong> $180.000 COP</li>
-                    <li><strong>Burbujas profesionales:</strong> $80.000 COP</li>
-                    <li><strong>Transporte fuera de Pereira:</strong> $40.000–$120.000 COP, según la distancia.</li>
-                    <li><strong>Reunión técnica y visita al lugar:</strong> Incluidas en Premium y Ultra. (En Básico y Estándar: $50.000 COP).</li>
-                </ul>
-                <div class="center-btn">
-                    <a href="https://wa.me" target="_blank" class="btn-primary">Solicitar cotización personalizada</a>
-                </div>
-            </div>
-
-            <!-- Condiciones -->
-            <div class="conditions-container">
-                <h3>Condiciones comerciales</h3>
+<a class="floating-wa" href="https://wa.me/573114334531?text=Hola%20JarafamilyDJ%2C%20quiero%20cotizar%20sus%20servicios%20para%20un%20evento." target="_blank" rel="noopener" aria-label="Cotizar servicios por WhatsApp"><span class="wa-icon">☏</span> Cotizar por WhatsApp</a>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
